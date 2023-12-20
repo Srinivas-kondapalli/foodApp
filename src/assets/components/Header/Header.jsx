@@ -26,7 +26,6 @@ const nav_links = [
 ]
 function Header() {
     const menuRef = useRef(null)
-    const headerRef = useRef(null)
 
     const toggleMenu = () => menuRef.current.classList.toggle('show_menu')
     const { totalQuantity } = useSelector(({ cart }) => cart)

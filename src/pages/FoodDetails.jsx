@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import React from 'react'
 import products from '../assets/fake-data/product'
 import { useParams } from 'react-router-dom'
