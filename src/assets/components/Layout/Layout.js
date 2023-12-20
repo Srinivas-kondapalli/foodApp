@@ -10,13 +10,13 @@ const Layout = () => {
   const { cartIsVisble } = useSelector(({ cartUi }) => cartUi)
   return (
     <div>
-    <Header/>
-    {cartIsVisble &&     <Carts/>
-}
-    <div>
-        <Routers/>
-    </div>
-    <Footer/>
+      <Header />
+      {cartIsVisble && <Carts />
+      }
+      <div>
+        <Routers />
+      </div>
+      <Footer />
     </div>
   )
 }

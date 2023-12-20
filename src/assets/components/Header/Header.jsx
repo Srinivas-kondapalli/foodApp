@@ -30,12 +30,12 @@ function Header() {
     const toggleMenu = () => menuRef.current.classList.toggle('show_menu')
     const { totalQuantity } = useSelector(({ cart }) => cart)
     console.log(totalQuantity);
-    const dispatch= useDispatch()
+    const dispatch = useDispatch()
 
     const [sticky, setSticky] = useState(false);
-const toggleCart = ()=>{
-    dispatch(toggle())
-}
+    const toggleCart = () => {
+        dispatch(toggle())
+    }
     useEffect(() => {
         const handleScroll = () => {
             if (window.pageYOffset > 0) {

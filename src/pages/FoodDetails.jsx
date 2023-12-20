@@ -19,20 +19,20 @@ const FoodDetails = () => {
   console.log(product)
   const [previewImg, setPreviewImg] = useState(product.image01);
   const [enteredName, setEnteredName] = useState('');
-  const [enteredEmail, setEnteredEmail] =useState('');
+  const [enteredEmail, setEnteredEmail] = useState('');
   const [reviewMsg, setReviewMsg] = useState('');
-  const { category, desc, price, title ,image01} = product;
+  const { category, desc, price, title, image01 } = product;
   const relatedProduct = products.filter(item => item.category === category)
-  const addItem = ()=>{
+  const addItem = () => {
     console.log("add")
     dispatch(cartSlice.actions.addItem(
       {
-      id,
-      price, title,image01
-    }))
+        id,
+        price, title, image01
+      }))
   }
-  const submitHandler = (e)=>{
-e.prventDefault()
+  const submitHandler = (e) => {
+    e.prventDefault()
   }
   useEffect(() => {
     setPreviewImg(product.image01)
@@ -134,7 +134,7 @@ e.prventDefault()
                     <p className="feedback__text">great product</p>
                   </div>
                   <form className="form"
-                   onSubmit={submitHandler}
+                    onSubmit={submitHandler}
                   >
                     <div className="form__group">
                       <input
