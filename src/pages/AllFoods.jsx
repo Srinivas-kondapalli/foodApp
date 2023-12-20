@@ -1,3 +1,5 @@
+/* eslint-disable eqeqeq */
+/* eslint-disable array-callback-return */
 import React, { useState } from 'react'
   import CommonSection from '../assets/components/UI/category/common-section/CommonSection';
 import Helmet from '../assets/components/Helmet/Helmet';
