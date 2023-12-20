@@ -7,11 +7,19 @@
     align-items: center;
     column-gap: 1rem;
     margin-bottom: 0;
+    color: #df2020;
   }
   .product__price span {
     font-size: 2rem;
   }
-  
+  .addToCart_btn{
+    border: none;
+    padding: 7px 25px;
+    background: #fd2020;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 0.9rem;
+}
   .category {
     font-weight: 600;
     color: #212245;

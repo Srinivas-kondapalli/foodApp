@@ -33,7 +33,7 @@ const Carts = () => {
 </div>
 <div className="cart_bottom d-flex align-items-center justify-content-between">
     <h6>SubTotal : <span>${totalAmount}</span></h6>
-    <button><Link to={'/checkout'}>Check out</Link></button>
+    <button onClick={toggleCart}><Link to='/checkout'>Check out</Link></button>
 </div>
    </ListGroup>
     </div>
