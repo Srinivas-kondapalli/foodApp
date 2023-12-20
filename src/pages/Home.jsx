@@ -114,7 +114,7 @@ const Home = () => {
                 <p className='feature_text'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit, repudiandae.{""}</p>
               </Col>
               {featureData.map((item, index) => (
-                <Col lg='4' md='6'  sm="6" key={index} className='mt-5'>
+                <Col lg='4' md='6' sm="6" key={index} className='mt-5'>
                   <div className="feature_item text-center px-5 py-3">
                     <img src={item.imgUrl} alt="feature-img" className='w-25 mb-3' />
                     <h5 className='fw-bold mb-3'>{item.title}</h5>
@@ -128,7 +128,7 @@ const Home = () => {
           </Container>
         </section>
         <section>
-          <Container> 
+          <Container>
             <Row>
               <Col lg='12' className='text-center'>
                 <h2>Popular foods</h2>
@@ -212,17 +212,17 @@ const Home = () => {
         <section >
           <Container>
             <Row>
-             
+
               <Col lg='6' md='6' >
-              <div>
-                <h5 className='testimonial_subtitle mb-4'>Testimonial</h5>
-                <h2  className='testimonial_title mb-4'>What our <span>Customers</span> are saying</h2>
-                <p className='testimonial_desc'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, amet!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, amet!</p>
-                <TestimonialSlider/>
-              </div>
+                <div>
+                  <h5 className='testimonial_subtitle mb-4'>Testimonial</h5>
+                  <h2 className='testimonial_title mb-4'>What our <span>Customers</span> are saying</h2>
+                  <p className='testimonial_desc'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, amet!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, amet!</p>
+                  <TestimonialSlider />
+                </div>
               </Col>
               <Col lg='6' md='6' >
-              <img src={networkImg} alt="testimanial-img" className='w-100' />
+                <img src={networkImg} alt="testimanial-img" className='w-100' />
               </Col>
             </Row>
           </Container>
