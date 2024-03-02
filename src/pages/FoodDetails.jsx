@@ -16,7 +16,6 @@ const FoodDetails = () => {
   const { id } = useParams();
   const dispatch = useDispatch()
   const product = products.find(product => product.id === id)
-  console.log(product)
   const [previewImg, setPreviewImg] = useState(product.image01);
   const [enteredName, setEnteredName] = useState('');
   const [enteredEmail, setEnteredEmail] = useState('');
@@ -24,7 +23,6 @@ const FoodDetails = () => {
   const { category, desc, price, title, image01 } = product;
   const relatedProduct = products.filter(item => item.category === category)
   const addItem = () => {
-    console.log("add")
     dispatch(cartSlice.actions.addItem(
       {
         id,

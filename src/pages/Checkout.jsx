@@ -1,22 +1,22 @@
 /* eslint-disable no-unused-vars */
-import React, { useState } from 'react'
-import Helmet from '../assets/components/Helmet/Helmet'
-import CommonSection from '../assets/components/UI/category/common-section/CommonSection'
-import { Col, Container, Row } from 'reactstrap'
-import '../../src/styles/product-card.css'
-import '../../src/styles/checkout.css'
-import { useSelector } from 'react-redux'
+import React, { useState } from "react";
+import Helmet from "../assets/components/Helmet/Helmet";
+import CommonSection from "../assets/components/UI/category/common-section/CommonSection";
+import { Col, Container, Row } from "reactstrap";
+import "../../src/styles/product-card.css";
+import "../../src/styles/checkout.css";
+import { useSelector } from "react-redux";
 function Checkout() {
-  const [enterName, setEnterName] = useState('')
-  const [enterEmail, setEnterEmail] = useState('')
-  const [enterNumber, setEnterNumber] = useState('')
-  const [enterCountry, setEnterCountry] = useState('')
-  const [enterCity, setEnterCity] = useState('')
-  const [postalCode, setPostalCode] = useState('')
+  const [enterName, setEnterName] = useState("");
+  const [enterEmail, setEnterEmail] = useState("");
+  const [enterNumber, setEnterNumber] = useState("");
+  const [enterCountry, setEnterCountry] = useState("");
+  const [enterCity, setEnterCity] = useState("");
+  const [postalCode, setPostalCode] = useState("");
   const { totalAmount: cartTotalAmount } = useSelector(({ cart }) => cart);
   const shippingCost = 30;
-  const totalAmount = cartTotalAmount + Number(shippingCost)
-  const shippinfInfo = []
+  const totalAmount = cartTotalAmount + Number(shippingCost);
+  const shippinfInfo = [];
   const submitHandler = (e) => {
     e.preventDefault();
     const userShippingAddress = {
@@ -26,11 +26,9 @@ function Checkout() {
       country: enterCountry,
       city: enterCity,
       postalCode: postalCode,
-    }
-    shippinfInfo.push(userShippingAddress)
-    console.log(userShippingAddress)
-  }
-
+    };
+    shippinfInfo.push(userShippingAddress);
+  };
 
   return (
     <Helmet title="Checkout">
@@ -115,7 +113,7 @@ function Checkout() {
         </Container>
       </section>
     </Helmet>
-  )
+  );
 }
 
-export default Checkout
+export default Checkout;
